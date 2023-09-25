@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* navigation bar */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.nav-wrapper{
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icon{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+    margin: 2px;
+}
+
+.logo{
+    padding: 2px;
+    font-weight: bold;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+}
+
+#toggler,
+.navbar label{
+    display: none;   
+}
+
+/*Home Section*/
+#home{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.heading p{
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-icon{
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+}
+
+.home-text{
+    color: white;
+    display: flex;
+    padding: 5px;
+    font-size: 4vw;
+    text-align: left; 
+     
+}
+.anim-txt{
+    font-size: 3.5vw;
+}
+
+.home-name{
+    color: yellow;
+}
+
+.flex-button{
+    padding: 5px;
+}
+
+.flex-cointainer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;   
+    flex-direction:row;        
+ }
+ 
+.flex-item{
+    align-items: left;
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    flex-direction: column;  
+}
+
+.flex-item img{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.icon-wrapper{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    display: flex;    
+    flex-wrap: wrap;
+    
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+}
+
+.flex-button{
+    width: auto;
+    height: auto;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+/*About Section*/
+#about{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    
+}
+
+.about-content{
+    padding: 5%;
+}
+
+.about-content p{
+    text-align: justify;
+    color: white;
+    
+}
+
+.flex-button{
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    width: fit-content;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.flex-button img{
+    height: 20px;
+    width: 20px;
+}
+
+.flex-button{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Skills Section*/
+#skills{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+}
+
+.skill-wrapper{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.skill-bar{    
+    width: 300px;
+    border-radius: 5px;
+    align-items: center;
+    height: auto;
+    background-color: white;
+}
+
+.skill-html{
+    width: 70%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.skill-css{
+    width: 70%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.skill-java{
+    width: 90%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.skill-sql{
+    width: 60%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.skill-cloud{
+    width: 50%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.skill-js{
+    width: 70%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.skill-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill-icon img{
+    height: 25px;
+    width: 25px;
+}
+
+/*Certificates section*/
+#certificates{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 2%;           
+}
+
+.certificates-wrapper{
+    display: flex;
+    justify-content: space-evenly;   
+    flex-direction:row;
+    align-items: center;
+    padding: 5%;
+}
+
+#main-image{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.images-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.images-wrapper img{
+    padding-left: 25%;
+    display: block;
+    height: 50px;
+    width: 75px;
+}
+
+.imgCarousel{
+    width: 75%;
+    height: 50%;
+    padding-top: 2%;
+}
+
+/*Project Section*/
+#project{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding-top: 3px;
+    padding-right: 3px;    
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-content{
+    background-color: white;
+    width:250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-content p{
+    color: black;
+    text-align: justify;
+}
+
+.card{
+    padding: 2px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card-image img{
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.title p{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.code-button{
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    width: fit-content;
+    justify-content: space-between;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.code-button:hover{
+    background-color: aliceblue;
+}
+
+.code-button img{
+    width: 20px;
+    height: 20px;
+}
+
+.code-button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding-left: 5px;
+}
+
+/*Contact Section*/
+#contact{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;  
+}
+
+.form{
+  padding: 0px 20% 5% 20% ;
+  display: flex;
+  flex-direction: column;    
+  justify-content: center;
+}
+
+.contact-details input{
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.contact-details input:nth-child(1){
+    margin-right: 5px;
+}
+
+.form textarea{
+    border-radius: 5px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.form a{
+    text-decoration: none;
+}
+
+button{
+    background-color: yellow;
+    color:  black;    
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    font-size: 1em;
+    border: 0ch;
+}
+
+.send-button{
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    width: 100%;
+    height: 4%;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 5px;
+    margin-top: 5px;    
+}
+
+.send-button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.send-button img{
+    height: 20px;
+    width: 20px;
+}
+
+/*footer Section*/
+footer{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.footwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.foot{
+    color: white;
+    padding-top: 10px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+}
+
+.foot h2{
+    font-size: 1em;
+    color: yellow;
+}
+
+.foot-txt{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.icon-footer img{
+    width: 20px;
+    height: 20px;
+}
+
+/*Media qureys for responsive design*/
+@media screen and (max-width: 550px){
+
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        height: auto;
+        width: 40px;
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+
+    .flex-cointainer{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .home-text{
+        font-size: 8vw;
+        font-weight: bold;
+    }
+    
+    .flex-item{
+        width: 80%;
+    }
+
+    #project{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .cardwrapper{
+        width: 100%;
+        height: 80vh;
+        overflow-y: auto;
+    }
+
+    .card-wrapper{        
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 5%;
+        align-items: center;
+    }
+
+    .icon img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .certificates-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .images-wrapper{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .images-wrapper img{
+        width: 50%;
+        height: 100%;
+    }
+
+    .card-content{
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-details input {
+        width: 96%;
+        margin-top: 5%;
+    }
+
+    .form textarea {
+        margin-top: 5%;
+    }
+
+    .skill-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-around;
+        padding: 5%;
+    }
+
+    .skill-bar{
+        width: 100%;
+        height: auto;
+    }
+    
+    .foot-txt{
+        text-align: center;
+        font-weight: bold;
+    }    
+    
+    .footwrapper{
+        padding: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }    
+}
+
+@media (prefers-color-scheme: light){
+    body{
+        background-color: #0B2545;       
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #000;
+    }
+}
